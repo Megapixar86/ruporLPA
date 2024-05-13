@@ -1,0 +1,87 @@
+b {
+  font-size: 25px
+}
+#height {
+  width: 600px;
+  border: 3px solid #000;
+  background-color: #D3D3D3;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 5px
+}
+#noise {
+  width: 600px;
+  border: 3px solid #000;
+  background-color: #D3D3D3;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 5px
+}
+#model {
+  width: 600px;
+  border: 3px solid #000;
+  background-color: #D3D3D3;
+  border-radius: 10px;
+  overflow-y: hidden;
+  overflow-x: auto;
+  height: auto;
+  padding: 5px;
+  font-size: 20px
+}
+#info {
+  display: none;
+  width: 600px;
+  border: 3px solid #000;
+  background-color: #FADBC8;
+  border-radius: 10px;
+  overflow-y: hidden;
+  overflow-x: auto;
+  height: auto;
+  padding: 5px;
+  font-size: 20px
+}
+input[type=text] {
+  height: 25px;
+  background-color: #fff;
+  font-size: 20px
+}
+input[type=button] {
+  height: 30px;
+  font-size: 20px
+}
+select {
+  text-align: center;
+  height: 25px;
+  width: auto;
+  background-color: #fff;
+  font-size: 20px
+}
+.btn {
+  width: 200px;
+  padding: 1px;
+  background-color: #E9967A;
+  border-radius: 3px;
+  border: 1px solid #000
+}
+.btn2 {
+  display: none;
+  width: 200px;
+  padding: 1px;
+  background-color: #E9967A;
+  border-radius: 3px;
+  border: 1px solid #000
+}
+
+#grid {
+	display: grid;
+    grid-template-columns: 30% 30% 30%;
+	text-align: center;
+	font-size: 20px;
+}
+#data {
+	display: none;
+	width: 600px;
+	background-color: #FADBC8;
+	border: 1px solid #000;
+	border-radius: 3px;
+}

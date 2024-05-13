@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.12.4/xlsx.core.min.js"></script>
+<script src = "script.js"></script>
+<! style src = "style.css"></style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id = "print">
+<b>Расчет дальности работы рупорного громкоговорителя</b>
+	</br>
+	</br>
+	<div id="height">Высота установки: <input type = text id = height_inp value = 5 size = "3" style = "text-align: center;"> м.</div>
+	</br>
+	<div id="noise">Относительный уровень шума: <input type = text id = noise_inp value = 60 size = "3" style = "text-align: center;"> дБ</div>
+	</br>
+	<div id="model">Выберите модель громкоговорителя: <select id='mod_sel' name = "model_sel" style = "text-align: center;">
+  <option value = "model0">Выбрать</option>
+	<option value = "model1">LPA-10H</option>
+	<option value = "model2">LPA-15H</option>
+	<option value = "model3">LPA-20H</option>
+	<option value = "model4">LPA-30H1</option>
+	<option value = "model5">LPA-50H</option>
+	<option value = "model6">LPA-100H</option>
+	<option value = "model7">LPA-30HM</option>
+	<option value = "model8">LPA-50HM</option>
+	<option value = "model11">LPA-10Exm</option>
+	<option value = "model12">LPA-10Exd</option>
+	<option value = "model13">LPA-15Exd</option>
+	<option value = "model14">LPA-15Exm</option>
+	<option value = "model15">LPA-30Exm</option>
+	<option value = "model16">LPA-30Exd</option>
+	<option value = "model17">LPA-50Exm</option>
+	<option value = "model18">LPA-50Exd</option>
+	</select></div>
+	</br>
+	<div id="info">
+    <div id="devices"></div>
+    </br>
+    <div id="spl"></div>
+    </br>
+    <div id="power"></div>
+    </br>
+    <div id="freq"></div>
+    </br>
+    <div id="angle"></div>
+	</div>
+	</br>
+	<div data-html2canvas-ignore="true">
+	<input id="btn" type= "button" name="btn" class="btn" value="рассчитать">
+  </div>
+  </br>
+	<div data-html2canvas-ignore="true">
+  <input id="btn2" type= "button" name="btn2" class="btn2" value="печать в PDF">
+  </div>
+	</br>
+	<canvas id="myCanvas" width="600" height="800" style="border:1px solid #000000; display: none">Решение</canvas>
+	</br>
+	<div class="html2pdf__page-break"></div>
+	</br>
+	</br>
+	</br>
+	</br>
+	<div id="data"></div>
+</div>
+</body>
+</html>
